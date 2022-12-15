@@ -6,15 +6,15 @@ import { Header } from './header/header';
 
 export const Layout = () => {
   const { state } = useNavigation();
-
+  let isProfile=document.location.pathname=='/login'||'/registration'?true:false
   return (
     <div className="wrapper">
-      <Header />
+      {isProfile?null:<Header />}
       {state === 'loading' ? <Loader /> : null}
       <main className="page">
         <Outlet></Outlet>
       </main>
-      <Footer />
+      {isProfile?null:<Footer />}
     </div>
   );
 };

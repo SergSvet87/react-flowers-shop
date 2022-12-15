@@ -58,18 +58,21 @@
   }
 
   &__cart {
+    
     cursor: pointer;
     margin-right: 20px;
+    img{
+      width: 25px;
+      height: 29px;
+}
   }
 
   &__avatar {
     cursor: pointer;
 
     img {
-      height: 50px;
-      width: 50px;
-      overflow: hidden;
-      border-radius: 50%;
+      height: 32px;
+      width: 29px;
       cursor: pointer;
     }
   }

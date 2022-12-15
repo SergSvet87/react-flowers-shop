@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { incr } from "../../Redux/incrReducer";
 import { PATHS } from "../../utils/urls";
+import profileLogo from '../../assets/img/profileLogo.svg'
+import corsina from '../../assets/img/corsina.svg'
 import './header.scss';
 import { useDispatch,useSelector } from "react-redux";
 
@@ -9,6 +11,7 @@ export const Header = () => {
   const count= useSelector(state=>state.increment.count)
   const arr= useSelector(state=>state.editPhotoCart.data)
   const dispatch=useDispatch()
+  console.log(document.location.pathname)
   return (
     <header className="header">
       <div className="container">
@@ -45,15 +48,17 @@ export const Header = () => {
               Sign UP
             </button>
           </Link> */}
-
-          <div className="profile__cart">
-            <img src="" alt="cart" />
-          </div>
+          <Link to={PATHS.login}>
+            <div className="profile__cart">
+              <img src={profileLogo} alt="cart" />
+           </div>
+          </Link>
+          
 
           <div className="profile__avatar">
             <img
-              src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/06/28/14/avatar.jpg?width=50"
-              alt="avatar"
+              src={corsina}
+              alt="cart"
             />
           </div>
         </div>

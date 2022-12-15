@@ -3,5 +3,7 @@ export const PATHS = {
   shop: '/shop',
   blog: '/blog',
   about: '/about',
+  login:'/login',
+  register:'/registration'
 };
 
