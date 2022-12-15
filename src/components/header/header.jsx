@@ -1,11 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import { incr } from "../../Redux/incrReducer";
 import { PATHS } from "../../utils/urls";
-
 import './header.scss';
+import { useDispatch,useSelector } from "react-redux";
 
 export const Header = () => {
+  const count= useSelector(state=>state.increment.count)
+  const arr= useSelector(state=>state.editPhotoCart.data)
+  const dispatch=useDispatch()
   return (
     <header className="header">
       <div className="container">
@@ -14,9 +17,10 @@ export const Header = () => {
         </div>
         <nav className="header__menu menu-header">
           <ul className="menu-header__list">
-            <li className="menu-header__item">
-              <Link to={PATHS.home}>Home</Link>
+            <li className="menu-header__item" onClick={()=>dispatch(incr())}>
+              <Link to={PATHS.home}>Home{count}</Link>
             </li>
+            {arr.map(()=><>ggg</>)}
 
             <li className="menu-header__item">
               <Link to={PATHS.shop}>Shop</Link>
