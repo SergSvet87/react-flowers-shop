@@ -24,6 +24,11 @@ export const router = createBrowserRouter([
         // loader: loaderShop,
       },
       {
+        path: PATHS.flower,
+        element: <Shop />,
+        // loader: loaderShop,
+      },
+      {
         path: PATHS.blog,
         element: <>Blog</>,
         // loader: loaderBlog,

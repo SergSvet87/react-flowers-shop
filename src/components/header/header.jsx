@@ -12,11 +12,11 @@ export const Header = () => {
     <header className="header">
       <div className="container">
         <div className="header__logo">
-          <Link to={PATHS.home}><span>Flower</span>Shop</Link>
+          <Link to={PATHS.home}><span>Flower</span> Shop</Link>
         </div>
         <nav className="header__menu menu-header">
           <ul className="menu-header__list">
-            <li className="menu-header__item">
+            <li className="menu-header__item active">
               <Link to={PATHS.home}>Home</Link>
             </li>
 
