@@ -1,0 +1,54 @@
+@import "../../../_variable.scss";
+
+.bar {
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 400;
+  font-size: $fs-text;
+  padding: 0 18px;
+  max-width: 1202px;
+  height: 96px;
+  background-color: $c-white;
+  border-radius: $radius-primary;
+
+  &__button {
+    font-weight: 400;
+    font-size: 18px;
+    color: $c-black;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  &__search {
+    margin: 0 5px;
+  }
+
+  &__form {
+    display: flex;
+    width: 491px;
+    background: url("../../../assets/svg/magnifying-glass.svg") 85% 45% no-repeat;
+
+    input {
+      font-size: $fs-text;
+      padding: 17px 55px 18px 30px;
+      width: 90%;
+      height: 56px;
+      background: transparent;
+      border-radius: $radius-primary;
+      border: 1px solid #d9d9d9;
+    }
+  }
+
+  &__sort,
+  &__filter {
+    @include flex(space-between, center);
+  }
+
+  img {
+    margin-right: 10px;
+  }
+}

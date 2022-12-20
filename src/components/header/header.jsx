@@ -12,11 +12,11 @@ export const Header = () => {
     <header className="header">
       <div className="container">
         <div className="header__logo">
-          <Link to={PATHS.home}><span>Flower</span>Shop</Link>
+          <Link to={PATHS.home}><span>Flower</span> Shop</Link>
         </div>
         <nav className="header__menu menu-header">
           <ul className="menu-header__list">
-            <li className="menu-header__item">
+            <li className="menu-header__item active">
               <Link to={PATHS.home}>Home</Link>
             </li>
 
@@ -46,19 +46,13 @@ export const Header = () => {
 
           <div className="profile__avatar">
             <Link to={PATHS.profile}>
-              <img
-                src={user}
-                alt="avatar"
-              />
+              <img src={user} alt="avatar" />
             </Link>
           </div>
 
           <div className="profile__cart">
             <Link to={PATHS.cart}>
-              <img
-                src={cartShop}
-                alt="cart"
-              />
+              <img src={cartShop} alt="cart" />
             </Link>
           </div>
         </div>
@@ -74,34 +68,22 @@ export const Header = () => {
           <nav className="mobile-menu__nav">
             <ul className="mobile-menu__list list-mobile">
               <li className="list-mobile__item">
-                <Link
-                  className="list-mobile__link"
-                  to="#"
-                >
+                <Link className="list-mobile__link" to="#">
                   <i className="material-icons">hail</i>Lifestyle
                 </Link>
               </li>
               <li className="list-mobile__item">
-                <Link
-                  className="list-mobile__link"
-                  to="#"
-                >
+                <Link className="list-mobile__link" to="#">
                   <i className="material-icons">star_half</i>Photodiary
                 </Link>
               </li>
               <li className="list-mobile__item">
-                <Link
-                  className="list-mobile__link"
-                  to="#"
-                >
+                <Link className="list-mobile__link" to="#">
                   <i className="material-icons">music_note</i>Music
                 </Link>
               </li>
               <li className="list-mobile__item">
-                <Link
-                  className="list-mobile__link"
-                  to="#"
-                >
+                <Link className="list-mobile__link" to="#">
                   <i className="material-icons">flight_land</i>Travel
                 </Link>
               </li>
@@ -109,10 +91,7 @@ export const Header = () => {
                 <div className="divider"></div>
               </li>
               <li className="list-mobile__item mobile-menu__close">
-                <Link
-                  className="list-mobile__link"
-                  to="#"
-                >
+                <Link className="list-mobile__link" to="#">
                   <i className="material-icons">cancel</i>Cancel
                 </Link>
               </li>

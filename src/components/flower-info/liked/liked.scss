@@ -1,0 +1,13 @@
+@import "../../../variable";
+
+.liked-flower {
+  h5 {
+    font-weight: normal;
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    @include flex(space-between, center);
+    gap: 20px;
+  }
+}

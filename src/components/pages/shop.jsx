@@ -1,6 +1,7 @@
 import React from "react";
-
-import { SelectedFlower } from "../selected-flower/selected-flower";
+import { Catalog } from "../catalog-flowers/catalog";
+import { FlowerInfo } from "./flower-info";
+import { Bar } from "../ui/bar/bar";
 
 export const Shop = () => {
   return (
@@ -8,9 +9,9 @@ export const Shop = () => {
       id="shop"
       className="shop"
     >
-      <div className="shop__category">This is SHOP</div>
-
-      <SelectedFlower />
+      <Bar />
+      <Catalog />
+      <FlowerInfo />
     </section>
   );
 };

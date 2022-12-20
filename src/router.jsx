@@ -7,6 +7,7 @@ import { Layout } from "./components/layout";
 import { ErrorPage } from "./components/pages/error-page";
 import { NotFoundPage } from "./components/pages/not-found-page";
 import { Shop } from "./components/pages/shop";
+import { Home } from "./components/pages/Home/home";
 
 export const router = createBrowserRouter([
   {
@@ -16,10 +17,15 @@ export const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <>Home</>,
+        element: <Home />,
       },
       {
         path: PATHS.shop,
+        element: <Shop />,
+        // loader: loaderShop,
+      },
+      {
+        path: PATHS.flower,
         element: <Shop />,
         // loader: loaderShop,
       },
