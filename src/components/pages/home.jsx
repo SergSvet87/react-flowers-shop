@@ -1,7 +1,6 @@
 import React from "react";
-import "./home.css";
-import { Post } from "./Post/post";
-import { Footer } from "../../Footer/footer";
+
+import { Post } from "../home/Post/post";
 
 export const Home = () => {
   return (
@@ -27,7 +26,6 @@ export const Home = () => {
         <div className="col-4">Comment</div>
         <div className="col-4">Comment</div>
       </div>
-      <Footer />
     </div>
   );
 };
