@@ -26,14 +26,15 @@
 .post_description p {
   padding-top: 5px;
   padding-left: 10px;
+  padding-bottom: 20px;
   color: #838383;
   line-height: 25px;
+  font-size: 16px;
 }
 .post_footer div {
   text-align: left;
   font-size: 12px;
   color: #838383;
-  padding-bottom: 15px;
 }
 .post_footer button {
   background-color: #ffffff;
@@ -42,4 +43,19 @@
   font-weight: 400;
   float: right;
   padding-right: 25px;
+  padding-bottom: 15px;
+}
+.post_footer .icons {
+  word-spacing: 1em;
+  margin-top: 5px;
+  padding-left: 27px;
+}
+.icons .eye {
+  position: relative;
+  left: 15px;
+  bottom: 1px;
+}
+.icons .hurt {
+  position: relative;
+  bottom: 1px;
 }

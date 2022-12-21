@@ -24,10 +24,10 @@ export const Post = () => {
           <br /> just get the one you love the most 😊
         </p>
         <div className="row post_footer">
-          <div className="col-6 ps-4">
-            <img src={hurt} alt="hurt" />
+          <div className="col-6 icons">
+            <img src={hurt} alt="hurt" className="hurt" />
             15
-            <img src={eye} alt="eye" /> 2001
+            <img src={eye} alt="eye" className="eye" /> 2001
           </div>
           <div className="col-6">
             <button>Read more</button>
