@@ -47,7 +47,7 @@ export const Header = () => {
           </Link> */}
 
           <div className="profile__avatar">
-            <Link to={PATHS.profile}>
+            <Link to={PATHS.login}>
               <img src={user} alt="avatar" />
             </Link>
           </div>
