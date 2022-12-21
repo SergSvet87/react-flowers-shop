@@ -1,0 +1,24 @@
+@import "../../../../variable";
+.comment {
+  background-color: #ffffff;
+}
+.comment_avatar {
+  padding-top: 20px;
+  padding-left: 29px;
+}
+.comment_description h5 {
+  padding-top: 36px;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.comment_description p {
+  color: #838383;
+
+  line-height: 30px;
+  font-weight: 400;
+  font-size: 20px;
+}
+.comment_rating {
+  padding-bottom: 28px;
+}

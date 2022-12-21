@@ -1,6 +1,6 @@
 import { Outlet, useNavigation } from "react-router-dom";
 
-import { Footer } from "./footer/footer";
+import { Footer } from "./Footer/footer";
 import { Loader } from "./ui/loader/loader";
 import { Header } from "./header/header";
 
