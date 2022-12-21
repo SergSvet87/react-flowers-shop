@@ -1,0 +1,20 @@
+@import "../../../variable";
+
+
+.button-add {
+    width: 163px;
+    height: 40px;
+    background: $c-primary;
+    font-size: $fs-text;
+    color: $c-white;
+    border-radius: $radius-primary;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    img {
+        position: absolute;
+        left: 15px;
+        top: 11px;
+    }
+  }

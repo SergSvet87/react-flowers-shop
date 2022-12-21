@@ -8,6 +8,8 @@ import { ErrorPage } from "./components/pages/error-page";
 import { NotFoundPage } from "./components/pages/not-found-page";
 import { Shop } from "./components/pages/shop";
 import { Home } from "./components/pages/Home/home";
+import { FlowerInfo } from "./components/pages/flower-info";
+import { AuthReg } from "./components/pages/AuthReg/AuthReg";
 
 export const router = createBrowserRouter([
   {
@@ -22,6 +24,11 @@ export const router = createBrowserRouter([
       {
         path: PATHS.shop,
         element: <Shop />,
+        // loader: loaderShop,
+      },
+      {
+        path: PATHS.flower,
+        element: <FlowerInfo />,
         // loader: loaderShop,
       },
       {
@@ -48,6 +55,16 @@ export const router = createBrowserRouter([
         path: "*",
         element: <NotFoundPage />,
       },
+
+      
+      {
+        path:PATHS.login,
+        element:<AuthReg initial='log'/>
+      },
+      {
+        path:PATHS.register,
+        element:<AuthReg initial='reg' />
+      }
     ],
   },
 ]);

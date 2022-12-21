@@ -5,5 +5,8 @@ export const PATHS = {
   about: '/about',
   profile: '/profile',
   cart: '/cart',
+  flower: '/flower-info',
+  login: '/login',
+  register:'/registration',
 };
 

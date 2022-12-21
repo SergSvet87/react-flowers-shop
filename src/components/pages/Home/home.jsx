@@ -1,7 +1,6 @@
 import React from 'react';
 import './home.scss';
 import {Post} from './Post/post';
-import {Footer} from '../../footer/footer';
 import {GoodsCard} from '../../ui/goods/goodsCard';
 import {MainTitle} from './MainTitle/MainTitle';
 
@@ -32,7 +31,6 @@ export const Home = () => {
                 <div className="col-4">Comment</div>
                 <div className="col-4">Comment</div>
             </div>
-            <Footer/>
         </div>
     );
 };

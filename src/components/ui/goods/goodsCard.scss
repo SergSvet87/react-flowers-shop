@@ -12,7 +12,7 @@
     box-shadow: 0 2px 1px $c-primary;
 
     &:hover {
-        transform:translateY(-8px);
+        transform:translateY(-6px);
         box-shadow: 0 0 6px $c-primary;
     }
 
@@ -42,7 +42,11 @@
         position: relative;
         left: 118px;
         color: $c-primary;
+        transition: box-shadow 0.2s ease;
 
+        &:hover {
+            box-shadow: 0 2px 0 $c-primary;
+        }
         img {
             height: 1em;
             margin-right: 7px;

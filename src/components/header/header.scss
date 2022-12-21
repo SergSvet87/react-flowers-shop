@@ -15,6 +15,9 @@
   }
 
   &__logo {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.19;
 
     span {
       color: $c-primary;
@@ -53,17 +56,30 @@
 }
 
 .profile {
+  &__auth {
+    &-button {
+      text-transform: uppercase;
+
+      &:hover {
+        box-shadow: 0px 3px 0px 0px rgba($color: $c-primary, $alpha: 0.3);
+      }
+    }
+  }
+
+  &__auth-button:first-child {
+    margin-right: 20px;
+  }
+
   &__cart {
     cursor: pointer;
   }
 
   &__avatar {
-    margin-right: 20px;
+    margin-right: 30px;
     cursor: pointer;
 
     img {
       overflow: hidden;
-      border-radius: 50%;
       cursor: pointer;
     }
   }
