@@ -1,24 +1,24 @@
-// .AuthReg {
+.AuthReg{
 
-//   ::;
-//   ::;
-//   88 : :px;
+    display: flex;
+    justify-content: center;
+    margin-top: 88px;
+   
+}
+.AuthReg-body{
 
-// }
-// .AuthReg-body{
-
-//   :: white;
-//   488 : :px;
+    background-color: white;
+    width: 488px;
 
 
-// }
+}
 
-// .Img{
-//   width: 488px;
+.Img{
+    width: 488px;
+   
+}
 
-// }
-
-// .Img img {
-// 100% :%;
-// 100% :%;
-// }
+.Img img {
+width: 100%;
+height: 100%;
+}
